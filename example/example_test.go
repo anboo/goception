@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"goception"
+	"github.com/anboo/goception"
 )
 
 type TestSuite struct {

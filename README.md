@@ -1,3 +1,10 @@
+## Download package
+```
+go get github.com/anboo/goception@latest
+```
+
+## Create first suite with same tests
+
 ```go
 package example
 
@@ -6,7 +13,7 @@ import (
 	"net/http"
 	"testing"
 
-	"goception"
+	"github.com/anboo/goception"
 )
 
 type TestSuite struct {
