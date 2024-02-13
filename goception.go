@@ -41,5 +41,5 @@ func RunSuites(t *testing.T, suites ...Suite) {
 }
 
 func isTestMethod(method reflect.Method) bool {
-	return len(method.Name) > 4 && method.Name[:4] == "Check"
+	return len(method.Name) > 4 && method.Name[:4] == "Test"
 }
