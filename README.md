@@ -35,7 +35,7 @@ func (suite *TestSuite) After(t *testing.T) {
 	//etc
 }
 
-func (suite *TestSuite) TestExample1(t *testing.T) {
+func (suite *TestSuite) CheckExample1(t *testing.T) {
 	var responseField string
 
 	suite.Actor.SetBaseURL("http://example.com").
@@ -47,7 +47,7 @@ func (suite *TestSuite) TestExample1(t *testing.T) {
 	fmt.Println("Response field:", responseField)
 }
 
-func (suite *TestSuite) TestExample2(t *testing.T) {
+func (suite *TestSuite) CheckExample2(t *testing.T) {
 	var responseField string
 
 	suite.Actor.SetBaseURL("http://example.com").
@@ -59,7 +59,7 @@ func (suite *TestSuite) TestExample2(t *testing.T) {
 	fmt.Println("Response field:", responseField)
 }
 
-func (suite *TestSuite) TestExample3(t *testing.T) {
+func (suite *TestSuite) CheckExample3(t *testing.T) {
 	var responseField string
 
 	suite.Actor.SetBaseURL("http://example.com").

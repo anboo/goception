@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"strings"
 	"testing"
@@ -100,7 +100,7 @@ func (a *Actor) ExpectResponse(expectedStatus int) *Actor {
 func (a *Actor) ParseJSON(v interface{}) *Actor {
 	defer a.lastRes.Body.Close()
 
-	body, err := ioutil.ReadAll(a.lastRes.Body)
+	body, err := io.ReadAll(a.lastRes.Body)
 	if err != nil {
 		a.t.Fatalf("failed to read response body: %v", err)
 	}
